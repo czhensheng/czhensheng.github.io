@@ -1,22 +1,92 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://czhensheng.github.io</id>
-    <title>czhensheng</title>
-    <updated>2020-03-21T09:50:04.041Z</updated>
-    <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://czhensheng.github.io"/>
-    <link rel="self" href="https://czhensheng.github.io/atom.xml"/>
-    <subtitle>czhensheng  power by note</subtitle>
-    <logo>https://czhensheng.github.io/images/avatar.png</logo>
-    <icon>https://czhensheng.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, czhensheng</rights>
-    <entry>
-        <title type="html"><![CDATA[Vscode]]></title>
-        <id>https://czhensheng.github.io/post/vscode/</id>
-        <link href="https://czhensheng.github.io/post/vscode/">
-        </link>
-        <updated>2020-03-21T09:48:11.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="vscode-解决方案">vscode 解决方案</h1>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    
+<meta charset="utf-8" >
+
+<title>Vscode | czhensheng</title>
+<meta name="description" content="czhensheng  power by note">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://czhensheng.github.io/favicon.ico?v=1584784177586">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://czhensheng.github.io/styles/main.css">
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://czhensheng.github.io">
+        <img class="avatar" src="https://czhensheng.github.io/images/avatar.png?v=1584784177586" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://czhensheng.github.io">
+        <h1 class="site-title">czhensheng</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
+  </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
+        <div class="post-detail">
+          
+          <h2 class="post-title">Vscode</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2020-03-21</span>
+            
+          </div>
+          <div class="post-content">
+            <h1 id="vscode-解决方案">vscode 解决方案</h1>
 <h2 id="快速查看vscode的帮助文档">快速查看vscode的帮助文档</h2>
 <p><img src="./pic/%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3.jpg" alt="帮助文档" loading="lazy"><br>
 默认英文官方，推荐<a href="https://www.cntofu.com/book/98/md/%E6%89%A9%E5%B1%95API/vscode-api.md">中英互译版本链接</a></p>
@@ -114,6 +184,50 @@
     // }
 }
 </code></pre>
-]]></content>
-    </entry>
-</feed>
+
+          </div>
+        </div>
+
+        
+      </div>
+
+      
+
+      <div class="site-footer">
+  <div class="slogan">czhensheng  power by note</div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  Powered by <a href="https://github.com/czhensheng/" target="_blank">czhensheng</a> | <a class="rss" href="https://czhensheng.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+
+    </div>
+    <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+  </body>
+</html>
